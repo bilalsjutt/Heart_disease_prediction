@@ -2,11 +2,11 @@
 
 A comprehensive machine learning pipeline for predicting heart disease using multiple classification algorithms with proper data preprocessing, cross-validation, and model comparison.
 
-## 🚀 Overview
+##  Overview
 
 This project implements a robust machine learning pipeline to predict heart disease status using various patient health indicators. The system compares multiple classification algorithms and selects the best-performing model based on rigorous evaluation metrics.
 
-## 🎯 Features
+##  Features
 
 - **Multiple Model Comparison**: Evaluates 5 different classification algorithms
 - **Proper Data Handling**: Implements data leakage prevention with correct train-test splitting
@@ -15,7 +15,7 @@ This project implements a robust machine learning pipeline to predict heart dise
 - **Cross-Validation**: 5-fold stratified cross-validation for robust model evaluation
 - **Comprehensive Metrics**: Detailed performance analysis with multiple evaluation metrics
 
-## 📋 Requirements
+##  Requirements
 
 ```bash
 pandas
@@ -30,7 +30,7 @@ Install dependencies:
 pip install pandas numpy scikit-learn imbalanced-learn
 ```
 
-## 📊 Dataset Requirements
+##  Dataset Requirements
 
 The code expects a CSV file with the following characteristics:
 - Target column: `"Heart Disease Status"` with values `"No"` and `"Yes"`
@@ -45,7 +45,7 @@ The code expects a CSV file with the following characteristics:
 - Target: Heart Disease Status (No/Yes)
 ```
 
-## 🔧 Usage
+##  Usage
 
 1. **Prepare your dataset**: Ensure your CSV file matches the expected format
 2. **Update file path**: Modify the dataset path in the code:
@@ -57,7 +57,7 @@ The code expects a CSV file with the following characteristics:
    python heart_disease_prediction.py
    ```
 
-## 🤖 Models Evaluated
+##  Models Evaluated
 
 The pipeline evaluates the following algorithms:
 
@@ -81,7 +81,7 @@ The pipeline evaluates the following algorithms:
    - n_neighbors=5
    - Simple, instance-based learning
 
-## 🔄 Pipeline Architecture
+##  Pipeline Architecture
 
 ### 1. Data Preprocessing
 - **Numerical Features**: Mean imputation + Standard scaling
@@ -97,7 +97,7 @@ The pipeline evaluates the following algorithms:
 - Final evaluation on hold-out test set (20% of data)
 - Comprehensive metrics calculation
 
-## 📈 Output
+##  Output
 
 The script provides:
 
@@ -130,16 +130,16 @@ Detailed Classification Report:
            1       0.84      0.86      0.85       105
 ```
 
-## 🛡️ Best Practices Implemented
+## 🛡 Best Practices Implemented
 
-- ✅ **Data Leakage Prevention**: Train-test split before any preprocessing
-- ✅ **Proper Cross-Validation**: Stratified K-fold for imbalanced data
-- ✅ **Pipeline Architecture**: All preprocessing steps in scikit-learn pipelines
-- ✅ **Class Balancing**: SMOTE applied within pipeline
-- ✅ **Feature Scaling**: StandardScaler for numerical features
-- ✅ **Robust Evaluation**: Multiple metrics and model comparison
+-  **Data Leakage Prevention**: Train-test split before any preprocessing
+-  **Proper Cross-Validation**: Stratified K-fold for imbalanced data
+-  **Pipeline Architecture**: All preprocessing steps in scikit-learn pipelines
+-  **Class Balancing**: SMOTE applied within pipeline
+-  **Feature Scaling**: StandardScaler for numerical features
+-  **Robust Evaluation**: Multiple metrics and model comparison
 
-## 📝 Customization
+##  Customization
 
 ### Adding New Models
 ```python
@@ -161,7 +161,7 @@ cv_folds = 10  # Increase folds
 cv_strategy = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=42)
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to contribute by:
 - Adding new classification algorithms
@@ -169,7 +169,7 @@ Feel free to contribute by:
 - Adding hyperparameter tuning capabilities
 - Improving visualization of results
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
